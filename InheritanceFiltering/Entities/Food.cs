@@ -4,6 +4,6 @@
     {
         public int Id { get; set; }
         public string Name { get; set; } = null!;
-        public ICollection<Animal> Animals { get; internal set; } = new HashSet<Animal>();
+        public ICollection<AnimalFood> Animals { get; internal set; } = new HashSet<AnimalFood>();
     }
 }

@@ -5,5 +5,7 @@ public abstract class Animal
 {
     public int Id { get; set; }
     public string Name { get; set; } = null!;
-    public ICollection<Food> Food { get; internal set; } = new HashSet<Food>();
+    [UseFiltering()]
+    [UseSorting]
+    public virtual ICollection<AnimalFood> Food { get; internal set; } = new HashSet<AnimalFood>();
 }
