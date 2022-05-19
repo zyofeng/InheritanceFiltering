@@ -1,6 +1,4 @@
-﻿namespace InheritanceFiltering.Entities
+﻿namespace InheritanceFiltering.Entities;
+public class Cat : Animal
 {
-    public class Cat : Animal
-    {
-    }
 }
